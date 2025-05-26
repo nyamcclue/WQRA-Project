@@ -1,0 +1,28 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.app-container {
+  min-height: 100vh; /* Forces full-page height */
+  width: 100%; /* Ensures full width */
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Expands content to fill space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+
+body {
+  overflow-y: auto;
+}

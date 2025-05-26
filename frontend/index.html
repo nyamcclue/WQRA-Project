@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WQRA</title>
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+SC:wght@100..900&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Licorice&display=swap" rel="stylesheet">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/helix.js"></script>
+  <style>
+    /* hide scroll bar */
+    html, body{
+      margin: 0;
+      padding: 0;
+      overflow-y: scroll; /* Ensure scrolling is possible */
+      scrollbar-width: none; /* For Firefox */
+    }
+
+    /* For WebKit browsers (Chrome, Safari) */
+    html::-webkit-scrollbar,
+    body::-webkit-scrollbar {
+      display: none;
+    }
+    #globalLoader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+      background: #E8E8E8;
+      z-index: 9999;
+      position: fixed;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      opacity: 1;
+      /* transform: scale(1); */
+      clip-path: ellipse(100% 100% at 50% 50%);
+      /* transition: transform 3s ease-in-out, opacity 2.77s ease-in-out; */
+      transition: clip-path 1s ease-in-out, opacity 4s ease-in-out;
+    }
+
+    #globalLoader.arc-reveal {
+      clip-path: ellipse(100% 0% at 50% 0%);
+      pointer-events: none;
+      /* transform: scale(2000); */
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- LDRS Web Component loader -->
+  <div id="globalLoader">
+    <l-grid size="400" speed="2.75" color='#334a64'></l-grid>
+  </div>
+
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>

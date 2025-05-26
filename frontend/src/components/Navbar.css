@@ -1,0 +1,39 @@
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background-color: rgba(191, 219, 254, 0.7); /* blue-200/70 */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 400ms ease-in-out;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+/* Slide in/out dropdown with clip-path ellipse animation */
+.dropdown-panel {
+  opacity: 0;
+  clip-path: ellipse(0% 0% at 50% 0%);
+  transition: opacity 500ms ease-in-out, clip-path 300ms ease-in-out;
+  pointer-events: none;
+}
+
+.dropdown-panel.show {
+  opacity: 1;
+  clip-path: ellipse(150% 200% at 50% 0%);
+  pointer-events: auto;
+}
+
+.dropdown-panel.hide {
+  opacity: 1;
+  clip-path: ellipse(0% 0% at 50% 0%);
+  pointer-events: none;
+}
+
+
+
