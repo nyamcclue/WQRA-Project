@@ -2,6 +2,17 @@
 
 An interactive, scroll-driven web app that visualizes real-time water contamination data using the EPA's public dataset. Built with React, Tailwind CSS, and ArcGIS MapView, the app allows users to explore environmental conditions through a clean, animated interface.
 
+## 👥 Team
+
+This project was developed collaboratively as part of a Computer Informatics capstone course at the University of Louisiana at Lafayette.
+
+**Team Members:**
+- Caleigh Meche – Full Stack Developer
+- Nya McClue – UI/UX Designer
+- Tristan Brasseaux – Backend Developer 
+- Jacob Bennet – Database Architect
+- Mark Gang - Database Architect
+
 ## 🔍 Features
 
 - 🗺️ Interactive Map using ArcGIS JS API
