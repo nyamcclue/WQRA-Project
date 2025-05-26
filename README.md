@@ -13,6 +13,9 @@ This project was developed collaboratively as part of a Computer Informatics cap
 - Jacob Bennet – Database Architect
 - Mark Gang - Database Architect
 
+Developed by a 5-person team as part of our Computer Informatics capstone. This version maintained and customized by [@nyamcclue](https://github.com/nyamcclue).
+
+
 ## 🔍 Features
 
 - 🗺️ Interactive Map using ArcGIS JS API
