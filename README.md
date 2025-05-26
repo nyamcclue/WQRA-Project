@@ -1,6 +1,6 @@
 # 🌊 WQRA – Water Quality Reporting & Analysis
 
-An interactive, scroll-driven web app that visualizes real-time water contamination data using the EPA's public dataset. Built with React, Tailwind CSS, and ArcGIS MapView, the app allows users to explore environmental conditions through a clean, animated interface.
+An interactive, scroll-driven web app that visualizes real-time water contamination data using the EPA's public dataset. Built with **React front-end**, **Django REST Framework** back-end, and **ArcGIS MapView**, the app allows users to explore environmental conditions through a clean, animated interface.
 
 ## 👥 Team
 
